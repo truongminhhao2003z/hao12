@@ -1,0 +1,196 @@
+
+.App {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #f3f9f3; /* Màu nền nhẹ nhàng, dễ nhìn */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #4caf50; 
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Thanh điều hướng */
+.navbar {
+  background-color: #4caf50; 
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-item {
+  margin: 0 15px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-item a:hover {
+  color: #ffcc80; /* Màu vàng nhạt khi hover */
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #4caf50; /* Xanh lá cây đậm cho border */
+  outline: none;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #81c784; /* Màu xanh lá cây sáng khi focus */
+}
+
+button.add-btn {
+  padding: 15px 30px; /* Tăng kích thước nút */
+  font-size: 18px; /* Tăng kích thước chữ */
+  background-color: #4caf50; /* Xanh lá cây đậm */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Bo tròn nút */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.3); /* Thêm bóng mờ cho nút */
+}
+
+button.add-btn:hover {
+  background-color: #388e3c; /* Màu xanh lá cây đậm hơn khi hover */
+}
+
+button.add-btn:active {
+  transform: scale(0.95); /* Tạo hiệu ứng nhấn khi bấm */
+}
+
+button.add-btn:focus {
+  outline: none; /* Loại bỏ outline khi focus */
+  box-shadow: 0 0 10px 2px rgba(76, 175, 80, 0.8); /* Thêm hiệu ứng khi focus */
+}
+
+/* Tương tự cho nút Enter (có thể thay thế nút này với nút Add nếu cần) */
+button.enter-btn {
+  padding: 15px 30px; /* Tăng kích thước nút */
+  font-size: 18px; /* Tăng kích thước chữ */
+  background-color: #ff9800; /* Màu cam cho nút Enter */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Bo tròn nút */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(255, 152, 0, 0.3); 
+}
+
+button.enter-btn:hover {
+  background-color: #fb8c00; 
+}
+
+button.enter-btn:active {
+  transform: scale(0.95); 
+}
+
+button.enter-btn:focus {
+  outline: none; 
+  box-shadow: 0 0 10px 2px rgba(255, 152, 0, 0.8);
+}
+
+ul.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  background-color: #e8f5e9; 
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+li.completed {
+  background-color: #dcedc8; 
+  text-decoration: line-through;
+  box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.3);
+}
+
+.task-text {
+  font-size: 18px;
+  color: #2e7d32; 
+  transition: color 0.3s ease;
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.task-text:hover {
+  color: #388e3c; 
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+  transform: scale(1.2); 
+}
+
+button.edit-btn, button.delete-btn {
+  background-color: #f44336; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.1s ease-in-out;
+  margin-left: 10px;
+}
+
+button.edit-btn:hover, button.delete-btn:hover {
+  background-color: #e53935; /* Đỏ đậm khi hover */
+}
+
+button.edit-btn:active, button.delete-btn:active {
+  transform: scale(0.95);
+}
+
+button.edit-btn {
+  background-color: #ffb74d; /* Màu vàng cam cho nút chỉnh sửa */
+}
+
+button.delete-btn {
+  background-color: #f44336; /* Màu đỏ tươi cho nút xóa */
+}
